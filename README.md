@@ -21,12 +21,14 @@ To run the site in development:
 tags serve -w
 ```
 
+Then visit `localhost:8000`.
+
 ## Deployment
 
-To build the site for production:
+The production www.epicodus.com site runs on [site44](site44.com). To build the site for production:
 
 ```
-tags build
+tags build -o ~/Dropbox/Apps/site44/www.epicodus.com/
 ```
 
-Then copy the contents of `_site` to production.
+Make sure to expire the cache in Cloudflare, as all content is cached.
