@@ -1,0 +1,55 @@
+{% include _partials/header.html %}
+
+<div class="hero-unit">
+  <div class="row">
+    <div class="span12">
+      <header>
+        <hgroup>
+          <div class="video"><iframe src="//player.vimeo.com/video/81838552" width="600" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
+          <h1>Learn how to program in four months.</h1>
+          <h2><strong>Epicodus</strong> is a four month, forty hour per week, in-person class on programming. You'll learn everything you need to know to get a job as a web developer or build your startup's app.</h2>
+        </hgroup>
+        <div class="action-buttons">
+          <a href="students.html" class="btn btn-large btn-primary">Become a student</a>
+          <a href="employers.html" class="btn btn-large btn-info">Hire graduates</a>
+          <a href="jobs.html" class="btn btn-large">Work with us</a>
+        </div>
+      </header>
+    </div>
+  </div>
+</div>
+
+<div class="features">
+  <div class="row">
+    <div class="span12">
+      <h2>Students of past Epicodus classes said:</h2>
+    </div>
+  </div>
+  <div class="row">
+    <div class="span4">
+      <div class="feature">
+        <p><em>"I am blown away with how much we've all learned in such a short amount of time. I think all education should be this way. I'm not just trying to complete the project, I'm trying to learn the hows, whys, ins and outs. It's totally different from college. This has been a thrill ride!"</em> - Hunter Meyer, Fall 2013</p>
+      </div>
+    </div>
+    <div class="span4">
+      <div class="feature">
+        <p><em>"If this had been the only post-high school education I ever invested in, it would still be worth more than my other 2 over-priced degrees put together. If it's a question of money, no investment will fare better. If it's a question of time, don't wait any more."</em> - Michal Kaszubowski, Fall 2013</p>
+      </div>
+    </div>
+    <div class="span4">
+      <div class="feature">
+        <p><em>"Your program was awesome and I would recommend it without hesitation to anyone."</em> - Mike Piccolo, Spring 2013</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="js/jquery.fitvids.js"></script>
+<script>
+$(document).ready(function(){
+  $(".video").fitVids();
+});
+</script>
+
+{% include _partials/footer.html %}
