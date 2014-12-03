@@ -13,6 +13,15 @@ $ easy_install brace-tags
 $ easy_install watchdog
 ```
 
+## Use with Git
+
+Brace Tags chokes on the `.git` folder, so after cloning, run:
+
+```
+mv .git _git  # Brace Tags ignores anything starting with _
+echo "gitdir: _git" > .git
+```
+
 ## Development
 
 To run the site in development:
@@ -21,7 +30,7 @@ To run the site in development:
 tags serve -w
 ```
 
-Then visit `localhost:8000`.
+Then visit `localhost:8000`. Brace Tags will automatically re-build the site for you as you make changes.
 
 ## Deployment
 
