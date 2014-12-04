@@ -122,6 +122,12 @@ a.employer {
   }
 }
 
+@media (max-width: 979px) {
+  .container {
+    margin-top: 30px;
+  }
+}
+
 .hero-unit {
   padding: inherit;
   padding-bottom: 30px;
