@@ -147,3 +147,7 @@ a.employer {
     display: none;
   }
 }
+
+.hero-unit h1 {
+  font-size: 55px;
+}
