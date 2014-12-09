@@ -137,3 +137,13 @@ a.employer {
   display: inline-block;
   padding: 3px;
 }
+
+.navbar .logo {
+  margin-left: -32.5px;
+}
+
+@media (max-width: 979px) {
+  .navbar .logo {
+    display: none;
+  }
+}
