@@ -139,7 +139,7 @@ a.employer {
 }
 
 .navbar .logo {
-  margin-left: -32.5px;
+  margin-left: -12.5px;
 }
 
 @media (max-width: 979px) {
@@ -179,4 +179,9 @@ footer img {
   footer .container {
      margin-top: inherit;
   }
+}
+
+.navbar-inner {
+  padding-left: inherit;
+  padding-right: inherit;
 }
