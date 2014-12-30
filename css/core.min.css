@@ -150,6 +150,7 @@ a.employer {
 
 .hero-unit h1 {
   font-size: 55px;
+  padding-right: 15px;
 }
 
 @media (max-width: 767px) {
