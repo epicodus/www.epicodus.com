@@ -21,11 +21,29 @@
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.fitvids.js"></script>
+    <script src="//a.vimeocdn.com/js/froogaloop2.min.js"></script>
     <script>
-    $(document).ready(function(){
-      $(".video").fitVids();
-    });
+      $(document).ready(function(){
+        $(".video").fitVids();
+      });
     </script>
+    <script>
+      var iframe = $('#homepage-video')[0],
+          player = $f(iframe);
+      var videoName = "Homepage";
 
+
+      player.addEvent('ready', function() {
+        player.addEvent('play', function(){
+          _kmq.push(['record', 'Played Video', {'Played Video Name': videoName}])
+        });
+        player.addEvent('pause', function(){
+          _kmq.push(['record', 'Paused Video', {'Paused Video Name': videoName}])
+        });
+        player.addEvent('finish', function(){
+          _kmq.push(['record', 'Finished Video', {'Finished Video Name': videoName}])
+        });
+      });
+    </script>
   </body>
 </html>
