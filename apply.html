@@ -1,7 +1,7 @@
 {% include partials/header.html %}
 <div class="row">
   <div class="span12">
-    <h1>Application</h1>
+    <h1>Apply</h1>
   </div>
 </div>
 <div class="row">
@@ -33,25 +33,81 @@
 </div>
 <div class="row">
   <div class="span9">
-    <div id="wufoo-x167eug5171gmev">
-      <a href="https://epicodus.wufoo.com/forms/x167eug5171gmev">Click here to apply.</a>
-    </div>
-    <script type="text/javascript">var x167eug5171gmev;(function(d, t) {
-    var s = d.createElement(t), options = {
-    'userName':'epicodus',
-    'formHash':'x167eug5171gmev',
-    'autoResize':true,
-    'height':'1384',
-    'async':true,
-    'host':'wufoo.com',
-    'header':'show',
-    'ssl':true};
-    s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'www.wufoo.com/scripts/embed/form.js';
-    s.onload = s.onreadystatechange = function() {
-    var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
-    try { x167eug5171gmev = new WufooForm();x167eug5171gmev.initialize(options);x167eug5171gmev.display(); } catch (e) {}};
-    var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
-    })(document, 'script');</script>
+    <h1>Application</h1>
+    <form id="application" method="post" action="https://epicodus.wufoo.com/forms/x167eug5171gmev/#public">
+      <label for="Field3">
+        Describe a <em>specific</em> time when you worked on a close-knit team. Address each of these points:<br />
+        <br />
+        * How did you contribute to the success or failure of the project?<br />
+        * How did other people on the team contribute to the success or failure? <br />
+        * What were your strengths as a group member?<br />
+        * What were your weaknesses?<br />
+        * How did you deal with other group members you didn't get along well with?
+      </label>
+      <textarea id="Field3" name="Field3" spellcheck="true" rows="10" required style="width: 100%;"></textarea>
+
+      <label for="Field19">
+        Complete the <a href="http://www.learnhowtoprogram.com/lessons/the-ping-pong-test" target="_blank">Ping-Pong test</a> and paste a link to your solution here. If you solve it in a language other than JavaScript, put it in a <a href="https://gist.github.com/" target="_blank">Gist</a> and paste the link.
+      </label>
+      <input id="Field19" name="Field19" type="url">
+
+      <label for="Field28">
+        Complete the <a href="http://www.learnhowtoprogram.com/lessons/layout-test" target="_blank">layout test</a>. Paste a link to your page here.
+      </label>
+      <input id="Field28" name="Field28" type="url">
+
+      <label for="Field11">What's your first name?</label>
+      <input id="Field11" name="Field11" type="text" spellcheck="false" required>
+
+      <label for="Field12">What's your last name?</label>
+      <input id="Field12" name="Field12" type="text" spellcheck="false" required>
+
+      <label for="Field13">What's your email address?</label>
+      <input id="Field13" name="Field13" type="email" spellcheck="false" required>
+
+      <label for="Field14">What's your phone number?</label>
+      <input id="Field14" name="Field14" type="tel" required>
+
+      <label>Where do you currently live?</label>
+      <label for="Field5_0" class="radio">
+        <input id="Field5_0" name="Field5" type="radio" value="Portland">
+        Portland
+      </label>
+      <label for="Field5_1" class="radio">
+        <input id="Field5_1" name="Field5" type="radio" value="Somewhere else">
+        Somewhere else:
+      </label>
+      <input name="Field5" type="text">
+
+      <label for="Field26">One of our goals is to help our graduates improve their jobs. What's your current or most recent yearly salary?</label>
+      <input id="Field26" name="Field26" type="text" required>
+
+      <label>How will you pay?</label>
+      <label for="Field16_0" class="radio">
+        <input id="Field16_0" name="Field16" type="radio" value="$3,400 up-front">
+        $3,400 up-front
+      </label>
+      <label for="Field16_1" class="radio">
+        <input id="Field16_1" name="Field16" type="radio" value="$900 up-front, $3,600 on the first day of class ($4,500 total)">
+        $900 up-front, $3,600 on the first day of class ($4,500 total)
+      </label>
+      <label for="Field16_2" class="radio">
+        <input id="Field16_2" name="Field16" type="radio" value="$200 up-front, $600 monthly for 8 months after class ($5,000 total)">
+        $200 up-front, $600 monthly for 8 months after class ($5,000 total)
+      </label>
+
+      <label>Which courses are you applying for?</label>
+      <label class="checkbox">
+        <input id="Field32" name="Field32" type="checkbox" value="March 2 PHP, JavaScript, and Drupal course">March 2 PHP, JavaScript, and Drupal course
+      </label>
+      <label class="checkbox">
+        <input id="Field33" name="Field33" type="checkbox" value="April 20 Ruby, JavaScript, and Rails course">April 20 Ruby, JavaScript, and Rails course
+      </label>
+
+      <input type="hidden" id="idstamp" name="idstamp" value="nBthXKRAA0BSeIkdjCx4WOFmZ0Mt/7A+W9uSfPNi5sA=" />
+
+      <button type="submit" class="btn">Submit</button>
+    </form>
   </div>
 </div>
 
